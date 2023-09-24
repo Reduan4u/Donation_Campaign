@@ -1,11 +1,19 @@
-import Catagories from "../Catagories/Catagories";
+import { useLoaderData } from "react-router-dom";
+import Categories from "../Categories/Categories";
 import Banner from "./Banner/Banner";
 
 const Home = () => {
+
+    const categories = useLoaderData();
+
+
     return (
-        <div>
+        <div className="w-10/12 m-auto">
             <Banner></Banner>
-            <Catagories></Catagories>
+            <Categories categories={categories}></Categories>
+            <div>
+
+            </div>
         </div>
     );
 };
