@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CategoryCard = ({ categoryCard }) => {
-
+    console.log(categoryCard);
     const { id, category, title, image_url, category_bg, card_bg, text_color } = categoryCard || {}
 
     const cardStyle = {

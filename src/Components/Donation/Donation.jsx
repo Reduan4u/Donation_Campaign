@@ -23,9 +23,11 @@ const Donation = () => {
 
 
     }
-
+    const donationsValue = donations.length;
+    console.log(donationsValue);
     return (
         <div>
+            <h1>Donation: {donations.length}</h1>
             {
                 noDonation ? <p className="h-[80vh] flex justify-center items-center">{noDonation}</p>
                     : (
@@ -47,6 +49,7 @@ const Donation = () => {
 
                         </div>
                     )};
+
         </div>
     );
 };

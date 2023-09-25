@@ -4,9 +4,12 @@ import SingleCategoryCard from "./SingleCategoryCard/SingleCategoryCard";
 
 const Category = () => {
     const [singleCategory, setSingleCategory] = useState();
+    const [filterCategory, setFilterCategory] = useState([]);
+
+
     const { id } = useParams();
     const categories = useLoaderData();
-
+    // console.log(categories);
     useEffect(() => {
         const findCategory = categories?.find((singleCategory) => singleCategory.id == id);
         setSingleCategory(findCategory);

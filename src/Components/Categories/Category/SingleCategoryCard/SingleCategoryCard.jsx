@@ -25,13 +25,6 @@ const SingleCategoryCard = ({ singleCategory }) => {
         }
     }
 
-    const cardStyle = {
-        backgroundColor: card_bg,
-    };
-    const titleStyle = {
-        backgroundColor: category_bg,
-        color: text_color,
-    };
     const textColor = {
         backgroundColor: text_color,
     };
