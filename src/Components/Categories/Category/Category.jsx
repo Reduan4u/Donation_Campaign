@@ -4,7 +4,6 @@ import SingleCategoryCard from "./SingleCategoryCard/SingleCategoryCard";
 
 const Category = () => {
     const [singleCategory, setSingleCategory] = useState();
-    const [filterCategory, setFilterCategory] = useState([]);
 
 
     const { id } = useParams();

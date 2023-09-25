@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DonationCard from "./DonationCard";
+import Swal from 'sweetalert2';
 
 const Donation = () => {
     const [donations, setDonations] = useState([]);
@@ -12,24 +13,42 @@ const Donation = () => {
         if (donationsList) {
             setDonations(donationsList);
         } else {
-            setNoDonation("No Donation Yet")
+            setNoDonation("No Donation Yet !!!")
         }
     }, []);
 
     const handleDelete = () => {
         localStorage.clear();
         setDonations([]);
-        setNoDonation("No Donation Yet")
+        setNoDonation("No Donation Yet !!!")
+        let timerInterval
+        Swal.fire({
+            title: 'Deleting Donation List',
+            html: 'I will close in <b></b> milliseconds.',
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+            }
+        })
 
+    };
 
-    }
-    const donationsValue = donations.length;
-    console.log(donationsValue);
     return (
         <div>
-            <h1>Donation: {donations.length}</h1>
             {
-                noDonation ? <p className="h-[80vh] flex justify-center items-center">{noDonation}</p>
+                noDonation ? <p className="h-[80vh] flex justify-center items-center text-5xl font-extrabold">{noDonation}</p>
                     : (
                         <div>
 
@@ -46,10 +65,8 @@ const Donation = () => {
                                 </button>}
                                 {donations.length > 0 && <button onClick={handleDelete} className="text-xl font-semibold px-7 border-none  text-white py-3  bg-green-600 rounded capitalize"> Delete List</button>}
                             </div>
-
                         </div>
                     )};
-
         </div>
     );
 };

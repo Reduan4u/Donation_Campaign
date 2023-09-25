@@ -1,7 +1,8 @@
+import Swal from 'sweetalert2';
 
 const SingleCategoryCard = ({ singleCategory }) => {
 
-    const { id, category, title, image_url, category_bg, card_bg, text_color, price, description } = singleCategory || {};
+    const { id, title, image_url, text_color, price, description } = singleCategory || {};
 
     const handleDonate = () => {
         const addedDonatedList = [];
@@ -9,7 +10,13 @@ const SingleCategoryCard = ({ singleCategory }) => {
         if (!donationList) {
             addedDonatedList.push(singleCategory);
             localStorage.setItem('donations', JSON.stringify(addedDonatedList));
-            alert("Added")
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Donation Completed',
+                showConfirmButton: false,
+                timer: 1000
+            })
         }
         else {
 
@@ -17,10 +24,21 @@ const SingleCategoryCard = ({ singleCategory }) => {
             if (!isExist) {
                 addedDonatedList.push(...donationList, singleCategory);
                 localStorage.setItem('donations', JSON.stringify(addedDonatedList))
-                alert("Added")
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Donation Completed',
+                    showConfirmButton: false,
+                    timer: 1000
+                })
             }
             else {
-                alert("Already Donated")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Already Donated',
+                    footer: '<a href="https://a08-donation-campaign.netlify.app/">Donate More</a>'
+                })
             }
         }
     }

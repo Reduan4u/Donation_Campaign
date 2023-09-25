@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-const COLORS = ["#FF444A", "#00C49F"];
-const RADIAN = Math.PI / 180;
-
 const Statistics = () => {
     const [donations, setDonations] = useState([]);
+    const COLORS = ["#FF444A", "#00C49F"];
+    const RADIAN = Math.PI / 180;
 
     useEffect(() => {
         const donationsList = JSON.parse(localStorage.getItem('donations'));
@@ -13,10 +12,8 @@ const Statistics = () => {
             setDonations(donationsList);
         }
     }, []);
+
     const donationsValue = donations.length;
-
-    console.log(donationsValue);
-
     const data = [
         { name: 'Total Donation', value: 12 - donationsValue },
         { name: 'Your Donation', value: donationsValue },
@@ -31,11 +28,10 @@ const Statistics = () => {
                         cx={200}
                         cy={200}
                         labelLine={false}
-                        label={({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+                        label={({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
                             const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
                             const x = cx + radius * Math.cos(-midAngle * RADIAN);
                             const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
                             return (
                                 <text
                                     x={x}
