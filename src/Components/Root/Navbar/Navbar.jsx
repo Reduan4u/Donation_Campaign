@@ -18,7 +18,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-3xl font-bold"><img className="w-2/3" src="../../../../public/resources/Logo.png" alt="" /></a>
+                    <a className="btn btn-ghost normal-case text-3xl font-bold"><img className="w-2/3" src="/resources/Logo.png" alt="" /></a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

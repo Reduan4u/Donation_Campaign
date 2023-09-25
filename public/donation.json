@@ -3,132 +3,168 @@
         "id": 1,
         "category": "Health",
         "title": "Medical Supplies Donation",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#0052ff40",
+        "card_bg": "#0052ff26",
+        "text_color": "#0052FF",
         "description": "Donate essential medical supplies to support those in need of healthcare. Your contribution will help provide critical supplies such as face masks, gloves, and sanitizers to healthcare facilities and frontline workers. Your generosity can make a significant impact on the fight against the pandemic.",
         "price": 250,
-        "image_url": "https://i.ibb.co/ydSKDCM/Health.png"
+        "image_url": [
+            "https://i.ibb.co/ydSKDCM/Health.png",
+            "https://i.ibb.co/VNpr4hW/Rectangle-4284.png"
+        ]
     },
     {
         "id": 2,
         "category": "Education",
         "title": "School Supplies Donation",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "text_color": "#FF444A",
         "description": "Support students by donating school supplies for their education. Your contribution will help provide essential supplies like notebooks, pencils, and backpacks to children in underserved communities. Empower the next generation through education.",
         "price": 150,
-        "image_url": "https://i.ibb.co/cFmHML3/Education.png"
+        "image_url": [
+            "https://i.ibb.co/cFmHML3/Education.png",
+            "https://i.ibb.co/Yd8zTRm/Rectangle-4287-1.png"
+        ]
     },
     {
         "id": 3,
         "category": "Clothing",
         "title": "Winter Clothing Drive",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "text_color": "#79C23F",
         "description": "Donate warm clothing to keep those in need comfortable during winter. Your contribution will provide jackets, sweaters, and blankets to individuals facing the cold. Help us make the winter season warmer for everyone.",
         "price": 350,
-        "image_url": "https://i.ibb.co/Z6QkdXh/Clothing.png"
+        "image_url": [
+            "https://i.ibb.co/Z6QkdXh/Clothing.png",
+            "https://i.ibb.co/CzqSXGm/Rectangle-4287.png"
+        ]
     },
     {
         "id": 4,
         "category": "Food",
         "title": "Food Bank Contribution",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "text_color": "#F87147",
         "description": "Contribute to the local food bank to fight hunger in your community. Your donation will provide essential food items to individuals and families in need. Join us in making sure that no one goes to bed hungry.",
         "price": 650,
-        "image_url": "https://i.ibb.co/3pgGyBn/Food.png"
+        "image_url": [
+            "https://i.ibb.co/3pgGyBn/Food.png",
+            "https://i.ibb.co/YBdZ7Zh/Rectangle-4287-2.png"
+        ]
     },
     {
         "id": 5,
         "category": "Food",
         "title": "Meal Sponsorship",
-        "category_bg": "#99E6C2",
-        "card_bg": "#E4FFFA",
-        "text_color": "#333",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "text_color": "#F87147",
         "description": "Sponsor meals for individuals in need of daily sustenance. Your support will provide nourishing meals to those experiencing food insecurity. Be a part of ensuring that everyone has access to a warm meal.",
         "price": "Donate now",
-        "image_url": "https://i.ibb.co/3pgGyBn/Food.png"
+        "image_url": [
+            "https://i.ibb.co/3pgGyBn/Food.png",
+            "https://i.ibb.co/YBdZ7Zh/Rectangle-4287-2.png"
+        ]
     },
     {
         "id": 6,
         "category": "Clothing",
         "title": "Clothing Vouchers",
-        "category_bg": "#99E6C2",
-        "card_bg": "#E4FFFA",
-        "text_color": "#333",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "text_color": "#79C23F",
         "description": "Support individuals with clothing vouchers for their essential needs. Your donation will provide vouchers that can be redeemed for clothing items, giving recipients the freedom to choose what suits them best. Make a difference in someone's wardrobe today.",
         "price": 350,
-        "image_url": "https://i.ibb.co/Z6QkdXh/Clothing.png"
+        "image_url": [
+            "https://i.ibb.co/Z6QkdXh/Clothing.png",
+            "https://i.ibb.co/CzqSXGm/Rectangle-4287.png"
+        ]
     },
     {
         "id": 7,
         "category": "Education",
         "title": "Scholarship Fund",
-        "category_bg": "#99E6C2",
-        "card_bg": "#E4FFFA",
-        "text_color": "#333",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "text_color": "#FF444A",
         "description": "Support students by donating school supplies for their education. Your contribution will help provide essential supplies like notebooks, pencils, and backpacks to children in underserved communities. Empower the next generation through education.",
         "price": 450,
-        "image_url": "https://i.ibb.co/cFmHML3/Education.png"
+        "image_url": [
+            "https://i.ibb.co/cFmHML3/Education.png",
+            "https://i.ibb.co/Yd8zTRm/Rectangle-4287-1.png"
+        ]
     },
     {
         "id": 8,
         "category": "Health",
         "title": "Emergency Medical Fund",
-        "category_bg": "#99E6C2",
-        "card_bg": "#E4FFFA",
-        "text_color": "#333",
+        "category_bg": "#0052ff40",
+        "card_bg": "#0052ff26",
+        "text_color": "#0052FF",
         "description": "Contribute to our emergency medical fund to help individuals facing medical crises. Your donation will provide immediate assistance to those struggling with medical expenses, ensuring they receive the care they urgently need. Join us in making a difference in their lives.",
         "price": 850,
-        "image_url": "https://i.ibb.co/ydSKDCM/Health.png"
+        "image_url": [
+            "https://i.ibb.co/ydSKDCM/Health.png",
+            "https://i.ibb.co/VNpr4hW/Rectangle-4284.png"
+        ]
     },
     {
         "id": 9,
         "category": "Education",
         "title": "Technology Access",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "text_color": "#FF444A",
         "description": "Support students by donating school supplies for their education. Your contribution will help provide essential supplies like notebooks, pencils, and backpacks to children in underserved communities. Empower the next generation through education.",
         "price": 750,
-        "image_url": "https://i.ibb.co/cFmHML3/Education.png"
+        "image_url": [
+            "https://i.ibb.co/cFmHML3/Education.png",
+            "https://i.ibb.co/Yd8zTRm/Rectangle-4287-1.png"
+        ]
     },
     {
         "id": 10,
         "category": "Health",
-        "title": "Medical Equipment Donation",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "title": "Medical Equip Donation",
+        "category_bg": "#0052ff40",
+        "card_bg": "#0052ff26",
+        "text_color": "#0052FF",
         "description": "Help provide medical equipment for those requiring special care. Your donation will assist in acquiring vital medical equipment such as wheelchairs, crutches, and mobility aids for individuals with special needs. Make mobility accessible to all.",
         "price": 950,
-        "image_url": "https://i.ibb.co/ydSKDCM/Health.png"
+        "image_url": [
+            "https://i.ibb.co/ydSKDCM/Health.png",
+            "https://i.ibb.co/VNpr4hW/Rectangle-4284.png"
+        ]
     },
     {
         "id": 11,
         "category": "Food",
-        "title": "Community Garden",
-        "category_bg": "#99E6C2",
-        "card_bg": "#E4FFFA",
-        "text_color": "#333",
+        "title": "Food Sponsorship",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "text_color": "#F87147",
         "description": "Support the establishment of community gardens to grow fresh produce for the needy. Your contribution will help create green spaces in urban areas where communities can grow their own fruits and vegetables. Promote food sustainability and access to fresh, healthy produce.",
         "price": 550,
-        "image_url": "https://i.ibb.co/3pgGyBn/Food.png"
+        "image_url": [
+            "https://i.ibb.co/3pgGyBn/Food.png",
+            "https://i.ibb.co/YBdZ7Zh/Rectangle-4287-2.png"
+        ]
     },
     {
         "id": 12,
         "category": "Clothing",
         "title": "Warm Blanket Drive",
-        "category_bg": "#FFBD9B",
-        "card_bg": "#FFF3E3",
-        "text_color": "#333",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "text_color": "#79C23F",
         "description": "Donate warm blankets to provide comfort and warmth to those in need. Your contribution will help distribute blankets to homeless individuals and families during the cold winter months. Bring a ray of warmth into someone's life.",
         "price": 350,
-        "image_url": "https://i.ibb.co/Z6QkdXh/Clothing.png"
+        "image_url": [
+            "https://i.ibb.co/Z6QkdXh/Clothing.png",
+            "https://i.ibb.co/CzqSXGm/Rectangle-4287.png"
+        ]
     }
 ]

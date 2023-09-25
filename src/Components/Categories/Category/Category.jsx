@@ -12,10 +12,9 @@ const Category = () => {
         setSingleCategory(findCategory);
 
     }, [id, categories])
-    console.log(singleCategory);
 
     return (
-        <div className="my-10 grid grid-cols-2 w-10/12 m-auto">
+        <div className="my-10 w-10/12 m-auto">
             <SingleCategoryCard singleCategory={singleCategory}></SingleCategoryCard>
         </div>
     );
