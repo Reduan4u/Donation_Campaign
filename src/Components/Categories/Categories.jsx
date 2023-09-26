@@ -1,6 +1,10 @@
+import { useEffect, useState } from "react";
 import CategoryCard from "./CategoryCard/CategoryCard";
 
 const Categories = ({ categories }) => {
+    //const allCategories = categories;
+
+
 
     return (
         <div className="my-10">

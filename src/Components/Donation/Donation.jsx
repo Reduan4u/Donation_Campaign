@@ -12,6 +12,7 @@ const Donation = () => {
         const donationsList = JSON.parse(localStorage.getItem('donations'));
         if (donationsList) {
             setDonations(donationsList);
+            console.log(donationsList);
         } else {
             setNoDonation("No Donation Yet !!!")
         }
@@ -39,7 +40,7 @@ const Donation = () => {
             }
         }).then((result) => {
             if (result.dismiss === Swal.DismissReason.timer) {
-                console.log('I was closed by the timer')
+                console.log('g')
             }
         })
 
