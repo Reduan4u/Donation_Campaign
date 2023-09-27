@@ -7,7 +7,9 @@ const SingleCategoryCard = ({ singleCategory }) => {
 
     const handleDonate = () => {
         const addedDonatedList = [];
-        const donationList = JSON.parse(localStorage.getItem('donations'))
+        const donationList = JSON.parse(localStorage.getItem('donations'));
+
+
         if (!donationList) {
             addedDonatedList.push(singleCategory);
             localStorage.setItem('donations', JSON.stringify(addedDonatedList));
@@ -21,7 +23,7 @@ const SingleCategoryCard = ({ singleCategory }) => {
         }
         else {
 
-            const isExist = donationList.find(singleCategory => singleCategory.id == id)
+            const isExist = donationList.find(singleCategory => singleCategory.id === id)
             if (!isExist) {
                 addedDonatedList.push(...donationList, singleCategory);
                 localStorage.setItem('donations', JSON.stringify(addedDonatedList))

@@ -22,7 +22,7 @@ const DonationCard = ({ categoryCard }) => {
     return (
         <div className="card card-side shadow-xl" style={cardStyle}>
             <figure className="w-2/5"><img src={image_url} className="h-full w-full" alt="Movie" /></figure>
-            <div className=" p-6">
+            <div className="p-6">
                 <h1 className="font-medium text-sm inline-flex rounded px-6 py-2" style={titleStyle}>{category}</h1>
                 <h2 className="card-title text-2xl font-semibold py-2">{title}</h2>
                 <p className="text-base font-semibold pb-5" style={textColor}>${price}.00</p>

@@ -20,12 +20,12 @@ const Statistics = () => {
     ];
 
     return (
-        <div className="mb-20 w-10/12 m-auto">
+        <div className="mb-20">
             <div className="flex justify-center">
-                <PieChart width={400} height={400}>
+                <PieChart width={240} height={400}>
                     <Pie
                         data={data}
-                        cx={200}
+                        cx={120}
                         cy={200}
                         labelLine={false}
                         label={({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
@@ -54,9 +54,9 @@ const Statistics = () => {
                     </Pie>
                 </PieChart>
             </div>
-            <div className="flex gap-10 justify-center font-semibold text-xl">
-                <h1 className="flex flex-wrap justify-center items-center">Your Donation: <span className="w-24 h-3 inline-block rounded-sm ml-2" style={{ backgroundColor: "#00C49F" }}> </span></h1>
-                <h1 className="flex flex-wrap justify-center items-center">Total Donation:<span className="w-24 h-3 inline-block rounded-sm ml-2" style={{ backgroundColor: "#FF444A" }} > </span></h1>
+            <div className="flex lg:gap-10 md:gap-8 sm:gap-6 gap-4 justify-center items-center text-center font-semibold text-base sm:text-xl md:text-xl lg:text-xl">
+                <h1 className="flex flex-wrap justify-center items-center text-center ml-2">Your Donation: <span className="w-20 h-3 inline-block rounded-sm ml-2" style={{ backgroundColor: "#00C49F" }}> </span></h1>
+                <h1 className="flex flex-wrap justify-center items-center text-center ml-2">Total Donation:<span className="w-20 h-3 inline-block rounded-sm ml-2" style={{ backgroundColor: "#FF444A" }} > </span></h1>
             </div>
         </div>
     );

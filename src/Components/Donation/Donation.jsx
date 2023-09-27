@@ -57,9 +57,14 @@ const Donation = () => {
                                 }
                             </div>
                             <div className="flex justify-center gap-10">
-                                {donations.length > 4 && <button onClick={() => setSeeAll(!seAll)} className="text-xl font-semibold px-7 py-3 border-none  text-white  bg-green-600 rounded capitalize">
-                                    {seAll ? "See Less" : "See All"}
-                                </button>}
+                                {donations.length > 4 && !seAll && (
+                                    <button
+                                        onClick={() => setSeeAll(true)}
+                                        className="text-xl font-semibold px-7 py-3 border-none text-white bg-green-600 rounded capitalize"
+                                    >
+                                        See All
+                                    </button>
+                                )}
                                 {donations.length > 0 && <button onClick={handleDelete} className="text-xl font-semibold px-7 border-none  text-white py-3  bg-green-600 rounded capitalize"> Delete List</button>}
                             </div>
                         </div>
