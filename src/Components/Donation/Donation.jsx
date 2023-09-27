@@ -7,12 +7,10 @@ const Donation = () => {
     const [noDonation, setNoDonation] = useState(false);
     const [seAll, setSeeAll] = useState(false)
 
-
     useEffect(() => {
         const donationsList = JSON.parse(localStorage.getItem('donations'));
         if (donationsList) {
             setDonations(donationsList);
-            console.log(donationsList);
         } else {
             setNoDonation("No Donation Yet !!!")
         }
@@ -40,7 +38,7 @@ const Donation = () => {
             }
         }).then((result) => {
             if (result.dismiss === Swal.DismissReason.timer) {
-                console.log('g')
+                console.log('ok')
             }
         })
 
@@ -49,11 +47,9 @@ const Donation = () => {
     return (
         <div>
             {
-                noDonation ? <p className="h-[80vh] flex justify-center items-center text-5xl font-extrabold">{noDonation}</p>
+                noDonation ? <p className="h-[80vh] flex justify-center text-center items-center text-5xl font-extrabold">{noDonation}</p>
                     : (
                         <div>
-
-
                             <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-10 w-10/12 m-auto my-10">
                                 {seAll ? donations.map((categoryCard) => (<DonationCard key={categoryCard.id} categoryCard={categoryCard}> </DonationCard>))
                                     :

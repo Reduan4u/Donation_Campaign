@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 const SingleCategoryCard = ({ singleCategory }) => {
 
@@ -60,11 +61,15 @@ const SingleCategoryCard = ({ singleCategory }) => {
                 </div>
             </div>
             <div className="mt-10">
-                <h1 className="text-5xl font-bold text-black">{title}</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-black">{title}</h1>
                 <p className="mt-6 text-justify text-base font-normal">{description}</p>
             </div>
         </div>
     );
 };
+
+SingleCategoryCard.propTypes = {
+    singleCategory: PropTypes.object,
+}
 
 export default SingleCategoryCard;

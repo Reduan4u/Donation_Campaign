@@ -2,9 +2,27 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/donation">Donation</NavLink></li>
-        <li><NavLink to="/statistics">Statistics</NavLink></li>
+        <li ><NavLink to="/" className={({ isActive, isPending }) =>
+            isPending
+                ? "pending"
+                : isActive
+                    ? "text-red-500 hover:bg-white underline"
+                    : ""
+        }>Home</NavLink></li>
+        <li><NavLink to="/donation " className={({ isActive, isPending }) =>
+            isPending
+                ? "pending"
+                : isActive
+                    ? "text-red-500 underline"
+                    : ""
+        }>Donation</NavLink></li>
+        <li><NavLink to="/statistics" className={({ isActive, isPending }) =>
+            isPending
+                ? "pending"
+                : isActive
+                    ? "text-red-500 underline"
+                    : ""
+        }>Statistics</NavLink></li>
     </>
     return (
         <div className="bg-base-200">
@@ -18,10 +36,12 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-3xl font-bold"><img className="w-2/3" src="https://i.ibb.co/crb8BC1/Logo.png" alt="" /></a>
+                    <a className="normal-case text-3xl font-bold">
+                        <NavLink to="/"><img className="w-2/3" src="https://i.ibb.co/crb8BC1/Logo.png" alt="" /></NavLink>
+                    </a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal font-semibold px-1">
                         {links}
                     </ul>
                 </div>

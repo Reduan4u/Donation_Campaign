@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const CategoryCard = ({ categoryCard }) => {
     const { id, category, title, image_url, category_bg, card_bg, text_color } = categoryCard || {}
@@ -25,5 +26,9 @@ const CategoryCard = ({ categoryCard }) => {
             </div></Link >
     );
 };
+
+CategoryCard.propTypes = {
+    categoryCard: PropTypes.object.isRequired,
+}
 
 export default CategoryCard;
